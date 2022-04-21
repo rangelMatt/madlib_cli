@@ -13,7 +13,7 @@ def read_template(file_path):
   with open(file_path,'r') as file:
     try:
       # print(file.read().strip())
-      return file.read().strip()
+      return file.read().strip() #.strip gets rid of any leading/trailing white strip.
     except FileNotFoundError:
       print("File does not")
 
