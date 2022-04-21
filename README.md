@@ -10,6 +10,7 @@
 - Dwight Lindquist
 - Roger Wells
 - [regex101](https://regex101.com/)
+- Day after lecture
 <!-- PORT - Port Number
 DATABASE_URL - URL to the running Postgres instance/db
 How to initialize/run your application (where applicable)
