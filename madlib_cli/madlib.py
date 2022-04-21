@@ -7,6 +7,8 @@ welcome = """**************************************
 ** To quit at any time, type "quit" **
 **************************************"""
 
+print(welcome)
+
 def read_template(file_path):
   with open(file_path,'r') as file:
     try:
@@ -29,5 +31,3 @@ def merge(string, user_input):
   merged = string.format(*user_input)
 
   return merged
-
-print(welcome)
