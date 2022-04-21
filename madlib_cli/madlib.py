@@ -1,15 +1,33 @@
-# print("""
+import re
 
-
-# """)
+welcome = """**************************************
+**    Welcome to the Mad Libs!   **
+**    Please see our Libs below.    **
+**
+** To quit at any time, type "quit" **
+**************************************"""
 
 def read_template(file_path):
-  with open("./assets/dark_and_storm_night_template.txt",'r') as file:
+  with open(file_path,'r') as file:
     try:
       return file.read().strip()
       print(file.read().strip())
     except FileNotFoundError:
       print("File does not")
 
-# def parse_template(file):
-#   # with open("./assets/dark_and_storm_night_template.txt", "r") as file:
+def parse_template(string):
+    mad_input = r'{\w*}'
+    sentence = r'\w{2,}'
+    
+    parts = str(re.findall(mad_input, string))
+    return_parts = tuple(re.findall(sentence,parts))
+    stripped_string = re.sub(mad_input, '{}',string)
+
+    return stripped_string, return_parts
+
+def merge(string, user_input):
+  merged = string.format(*user_input)
+
+  return merged
+
+print(welcome)

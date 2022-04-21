@@ -4,6 +4,11 @@
 
 ## Links and Resources
 
+- ![includehelp.com](https://www.includehelp.com/python/FileNotFoundError.aspx)
+- Morning Lecture Video
+- Bishal Khanal
+- Dwight Lindquist
+- Roger Wells
 <!-- PORT - Port Number
 DATABASE_URL - URL to the running Postgres instance/db
 How to initialize/run your application (where applicable)
@@ -19,10 +24,13 @@ Tests -->
 4. Fleshed out formula in series module
 5. Run `pytest`
    - If failed, tweak check for error and refactor accordingly
+      - GOOGLE, PEER, TA
    - If Pass, proceed to next formula.
 
 ## Any tests of note?
 
-Test three for the sum_series function wasn't something I was expecting. It put out 'None' and I was expected 0. If I get more time I am going to revisit this and play with that one some more.
+def parse_template required to use regex. Regex made it INSANELY harder. I needed a lot of hand holding on this on.
+
+def test_read_template_raises_exception_with_bad_path threw me for a quick loop.
 
 <!-- Describe any tests that you did not complete, skipped, etc -->
