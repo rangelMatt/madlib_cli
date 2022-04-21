@@ -4,7 +4,7 @@
 
 ## Links and Resources
 
-- (https://www.includehelp.com/python/FileNotFoundError.aspx)
+- [include help](https://www.includehelp.com/python/FileNotFoundError.aspx)
 - Morning Lecture Video
 - Bishal Khanal
 - Dwight Lindquist
