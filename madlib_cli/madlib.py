@@ -10,12 +10,12 @@ welcome = """**************************************
 print(welcome)
 
 def read_template(file_path):
-  with open(file_path,'r') as file:
     try:
-      # print(file.read().strip())
-      return file.read().strip() #.strip gets rid of any leading/trailing white strip.
+      with open(file_path,'r') as file:
+        return file.read().strip() #.strip gets rid of any leading/trailing white strip.
+    # print(file.read().strip())
     except FileNotFoundError:
-      print("File does not")
+      raise FileNotFoundError
 
 def parse_template(string):
     mad_input = r'{\w*}'
